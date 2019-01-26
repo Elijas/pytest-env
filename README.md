@@ -28,6 +28,12 @@ You can use `D:` (default) as prefix if you don't want to override existing envi
         D:HOME=~/tmp
         D:RUN_ENV=test
 
+You can also use `R:` (raw) prefix if you wish to have curly bracket characters inside the env variable:
+
+    [pytest]
+    env =
+        R:SOME_DICT={"key": "value"}
+
 Lastly, you can use existing environment variables using a python-like format:
 
     [pytest]
